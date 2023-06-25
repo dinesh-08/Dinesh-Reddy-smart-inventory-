@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mybootapp.main.model.Product;
+
 import com.mybootapp.main.model.Vendor;
 import com.mybootapp.main.repository.VendorRepository;
 

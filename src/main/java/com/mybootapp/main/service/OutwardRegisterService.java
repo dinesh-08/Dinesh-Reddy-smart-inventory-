@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.mybootapp.main.model.InwardRegister;
 import com.mybootapp.main.model.OutwardRegister;
+import com.mybootapp.main.model.Vendor;
 import com.mybootapp.main.repository.OutwardRegisterRepository;
 
 @Service
@@ -39,6 +40,15 @@ public class OutwardRegisterService {
 	public List<OutwardRegister> getAll() {
 		// TODO Auto-generated method stub
 		return outwardregisterrepository.findAll();
+	}
+	public OutwardRegister getById(int outwardregisterId) {
+		// TODO Auto-generated method stub
+		Optional<OutwardRegister> optional=outwardregisterrepository.findById(outwardregisterId);
+		if(!optional.isPresent())
+		{
+			return null;
+		}
+		return optional.get();
 	}
 
 }
