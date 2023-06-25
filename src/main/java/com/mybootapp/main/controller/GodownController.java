@@ -114,9 +114,9 @@ public class GodownController {
 //
 //        return listDto;
 //	}
-//	@GetMapping("/report")
-//    public List<Godown> godownReport() {
-//        return godownservice.getAll();
-//    }
+	@GetMapping("/report")
+    public List<Godown> godownReport() {
+        return godownservice.getAll();
+    }
 
 }
